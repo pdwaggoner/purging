@@ -1,14 +1,14 @@
 # See the README markdown for an overview of the example here. 
 
-# Read in the UN data in the attached data folder
+# Read in the UN .csv data
 
 # Start with simple bivariate specification
 UN$Contracept <- as.numeric(as.character(UN$Cont)) # character to generate "NA" instead of ".."
 
-labor.model <- lm(Fert ~ FemEc, data = UN); summary(labor.model)
+lm1 <- lm(Fert ~ FemEc, data = UN); summary(lm1)
 
 # Now, we can add the other IV of interest to set up the need to purge
-multi.model <- lm(Fert ~ FemEc + Contracept, data=UN); summary(multi.model)
+lm2 <- lm(Fert ~ FemEc + Contracept, data=UN); summary(lm2)
 
 # Each independently impacts Fert, but not together, suggesting mediation effects, which turns our original causal model to:  LABOR (indirect) -> CONTRACEPT (direct) -> FERTILITY
 m1 <- lm(Contracept ~ FemEc, data = UN); summary(m1)
