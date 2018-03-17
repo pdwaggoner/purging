@@ -1,6 +1,6 @@
 # `purging` for mediation effects
 
-#### Simple method for eliminating mediating impacts among independent variables
+### Simple method for eliminating mediating impacts among independent variables
 
 Though there are some great packages for mediation analysis out there, the simple intuition of its need is often ambiguous, especially for younger graduate students. Thus, this is set of files provides a quick, intuitive overview of mediation and the need and a simple method for "purging" variables for use in multivariate analysis.
 
