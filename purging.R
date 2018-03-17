@@ -18,7 +18,7 @@ new.UN <- UN[UN$Cont != "..", ] # create new dataset excluding "NAs"
 new.UN$purged <- m1$residuals # create "purged" variable, which is the portion of "Contracept" independent of "FemEc"
 
 # Now update the multivariate specification with the purged variable, and inspect the differences in magnitude and significance compared to lm2 
-m2 <- lm(Fert ~ FemEc + purged, data=new.UN); summary(m2)
+m2 <- lm(Fert ~ FemEc + purged, data = new.UN); summary(m2)
 
 # Inspect the unique impacts picked up as a result of the purging strategy
 pairs(~ GDP + FemEc + purged, data = new.UN, pch=19)
