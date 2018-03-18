@@ -1,3 +1,5 @@
+## Dependencies: MASS
+
 #' Purges mediator effects between two independent variables
 #'
 #' Purges mediator effects between two independent variables, and returns new "purged" direct variable to be used in multivariate specification. Supports several functional forms (e.g., linear, logit, poisson, etc.).
