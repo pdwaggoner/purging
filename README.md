@@ -1,8 +1,6 @@
 # `purging` An R package for addressing mediation effects among independent variables
 
-## Simple method for addressing mediation effects among independent variables
-
-### Why should I use `purging`?
+## Why should I use `purging`?
 
 Though there are some great packages for mediation analysis out there, the simple intuition of its need is often ambiguous, especially for younger graduate students. Thus, this set of files provides a quick, intuitive overview of mediation and offers a simple method for "purging" variables for use in multivariate analysis. The result of these files is an R package I am in the process of developing. See the `purging.R` file for the working script across several functional forms (see examples below).
 
@@ -16,7 +14,7 @@ The `UN.csv` file is a small dataset based on the 2005 United Nations Human Deve
 
 Feel free to [reach out](http://www.philipdwaggoner.com/) if anything is unclear or if you want to chat more about mediation models/analysis, causal inference, etc. Once the intuition is mastered, check out some great work on mediation from many folks, including Kosuke Imai (Princeton), Luke Keele (Georgetown), and several others. See Imai's mediation site as a sound starting place with [code, papers, and more](https://imai.princeton.edu/projects/mechanisms.html). 
 
-### How do I use `purging`?
+## How do I use `purging`?
 
 Researchers should use `purging` if they are concerned mediation may be "canceling out" the effects of one variable as a result of another, when both are included in a single multivariate analysis. The idea behind the package then, is to generate the new direct-impact variable to be used in the analysis, _purged of the effects of the indirect variable_, simply by inputting the name of the data frame, direct variable, and indirect variable in the function. Calling the function will generate a new object (i.e., the variable), which can then be added to a data frame using the `$` operator in R, with the following line of code: `df$purged.var <- purged.var`.
 
@@ -39,11 +37,11 @@ df <- data.frame(A = c(1,1,1,1,1,2,2,2,3,4), B = 1:10) # create some count data
 purge.poisson(df, "A", "B") # same syntax as above; To use the negative binomial iteration, substitute `.poisson` for `.negbin`.
 ```
 
-### How do I get `purging `?
+## How do I get `purging `?
 
 Though the full package will soon be released on CRAN, you can download the full, yet pre-released version (1.0.0) in the attached R scripts in these files in my `purging` repository on GitHub. Check back for the full release at CRAN soon. If you have any questions or find any bugs requiring fixing, please feel free to contact me. If you use the package for any published work, either formally or informally, please let me know _first_.
 
-### How do I cite `purging`?
+## How do I cite `purging`?
 
 As this procedure was first developed and implemented (using the _logit_ iteration discussed above in the first example) in a now-published paper, please cite use of the package as: Waggoner, Philip D. 2018. "Do Constituents Influence Issue-Specific Bill Sponsorship?" _American Politics Research_, <https://doi.org/10.1177/1532673X18759644>
 
