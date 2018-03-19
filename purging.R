@@ -4,11 +4,11 @@
 #' Purges mediator effects between two independent variables
 #'
 #' Purges mediator effects between two independent variables, and returns new "purged" direct variable to be used in multivariate specification. Supports several functional forms (e.g., linear, logit, poisson, etc.).
-#'@usage purge.lm(df, "direct.var", "indirect.var")
-#'@usage purge.logit(df, "direct.var", "indirect.var")
-#'@usage purge.probit(df, "direct.var", "indirect.var")
-#'@usage purge.poisson(df, "direct.var", "indirect.var")
-#'@usage purge.negbin(df, "direct.var", "indirect.var")
+#'@usage purge.lm(x, "direct", "indirect")
+#'@usage purge.logit(x, "direct", "indirect")
+#'@usage purge.probit(x, "direct", "indirect")
+#'@usage purge.poisson(x, "direct", "indirect")
+#'@usage purge.negbin(x, "direct", "indirect")
 #'@param x Represents data frame, though usage requires the data.frame name
 #'@param direct Represents "direct", or mediator variable, though usage requires column's name
 #'@param indirect Represents "indirect", or mediated variable, though usage requires column's name
@@ -53,8 +53,12 @@ purge.poisson <- function(x, direct, indirect){
 }
 
 purge.negbin <- function(x, direct, indirect){
+  if (!requireNamespace("MASS", quietly = TRUE)) {
+    stop("Package \"MASS\" needed for this function to work. Please install it.",
+         call. = FALSE)
+  }
   message("*** Consider attaching purged variable to your dataset, using the code: data.frame$purged <- purged")
-  base <- glm.nb(as.numeric(x[,direct]) ~ as.numeric(x[,indirect]))
+  base <- MASS::glm.nb((as.numeric(x[,direct]) ~ as.numeric(x[,indirect])))
   purged <- base$residuals
   return(purged)
 }
