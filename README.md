@@ -18,18 +18,18 @@ Feel free to [reach out](http://www.philipdwaggoner.com/) if anything is unclear
 
 Researchers should use `purging` if they are concerned mediation may be "canceling out" the effects of one variable as a result of another, when both are included in a single multivariate analysis. The idea behind the package then, is to generate the new direct-impact variable to be used in the analysis, _purged of the effects of the indirect variable_, simply by inputting the name of the data frame, direct variable, and indirect variable in the function. Calling the function will generate a new object (i.e., the variable), which can then be added to a data frame using the `$` operator in R, with the following line of code: `df$purged.var <- purged.var`.
 
-Importantly, the package supports several functional forms, dependent on the mediating variable in question. These forms include linear for continuous, logit and profit for binary, and Poisson and negative binomial for count data, where the functional form should be included after the `purge.` in the command (e.g., `purge.logit`). See the following three examples corresponding with each type of data.
+Importantly, the package supports several functional forms, dependent on the mediating variable in question. These forms include linear for continuous data, logit and probit for binary data, and Poisson and negative binomial for event count data, where the functional form should be included after the `purge.` in the command (e.g., `purge.logit`). See the following three examples corresponding with each type of data.
 
 ```{r }
 ## First, linear/continuous example
-df <- data.frame(A = 1:10, B = 2:11) # create some data
+df <- data.frame(A = 1:10, B = 2:11) # create continuous some data
 
 purge.lm(df, "A", "B") # where, df = data frame; A = column name considered as "direct"; and B = column considered as "indirect"
 
 ## Second, logit/binary example
 df <- data.frame(A = rep(0:1, 20), B = 1:20) # create some binary response data
 
-purge.logit(df, "A", "B") # same syntax as above; To use the profit iteration, substitute `.logit` for `.probit`.
+purge.logit(df, "A", "B") # same syntax as above; To use the probit iteration, substitute `.logit` for `.probit`.
 
 ## Third, Poisson/counts example
 df <- data.frame(A = c(1,1,1,1,1,2,2,2,3,4), B = 1:10) # create some count data
