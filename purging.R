@@ -1,4 +1,4 @@
-## Dependencies: MASS
+## Imports: MASS
 ## Working code/details in Roxygen syntax
 
 #' Purges mediator effects between two independent variables
