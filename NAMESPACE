@@ -1,0 +1,6 @@
+importFrom("stats", "binomial", "glm", "lm", "poisson")
+export(purge.lm)
+export(purge.logit)
+export(purge.probit)
+export(purge.poisson)
+export(purge.negbin)
