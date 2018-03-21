@@ -39,7 +39,7 @@ purge.poisson(df, "A", "B") # same syntax as above; To use the negative binomial
 
 ## How do I get `purging `?
 
-Though the full package will soon be released on CRAN, you can download the full, yet pre-released version (1.0.0) in the attached R scripts in these files in my `purging` repository on GitHub. Check back for the full release at CRAN soon. If you have any questions or find any bugs requiring fixing, please feel free to contact me. If you use the package for any published work, either formally or informally, please let me know _first_.
+You can download the package and documentation at [CRAN](https://CRAN.R-project.org/package=purging). If you have any questions or find any bugs requiring fixing, please feel free to contact me.
 
 ## How do I cite `purging`?
 
