@@ -45,7 +45,9 @@ You can download the package and documentation at [CRAN](https://CRAN.R-project.
 
 ## How do I cite `purging`?
 
-A formal paper is being prepared and is hopefully coming soon. Stand by... But for now, you can manually cite it:
+A formal paper is being prepared and is hopefully coming soon. Stand by... 
+
+But for now, you can manually cite it:
 
 @Manual{waggoner2018purging,<br/>
     title = {purging: An R package for addressing mediation effects among independent variables},<br/>
