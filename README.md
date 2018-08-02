@@ -45,6 +45,8 @@ You can download the package and documentation at [CRAN](https://CRAN.R-project.
 
 ## How do I cite `purging`?
 
-As this procedure was first developed and implemented (using the _logit_ iteration discussed above in the first example) in a now-published paper, please cite use of the package as: Waggoner, Philip D. 2018. "Do Constituents Influence Issue-Specific Bill Sponsorship?" _American Politics Research_, <https://doi.org/10.1177/1532673X18759644>
+A formal paper is being prepared and is hopefully coming soon. Stand by... But for now, you can manually cite it:
+
+
 
 Thanks and enjoy!
