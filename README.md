@@ -47,6 +47,11 @@ You can download the package and documentation at [CRAN](https://CRAN.R-project.
 
 A formal paper is being prepared and is hopefully coming soon. Stand by... But for now, you can manually cite it:
 
-
+@Manual{waggoner2018purging,<br/>
+    title = {purging: An R package for addressing mediation effects among independent variables},<br/>
+    author = {Philip D. Waggoner},<br/>
+    year = {2018},<br/>
+    note = {R package version 1.0.0}<br/>
+  }
 
 Thanks and enjoy!
