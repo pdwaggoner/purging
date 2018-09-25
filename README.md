@@ -2,7 +2,7 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/purging)](http://cran.r-project.org/package=purging)
 [![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/purging)](http://cranlogs.r-pkg.org/)
 
-## Why should I use `purging`?
+## Why use `purging`?
 
 Though there are some great packages for mediation analysis out there, the simple intuition of its need is often ambiguous, especially for younger graduate students. Thus, this set of files provides a quick, intuitive overview of mediation and offers a simple method for "purging" variables for use in multivariate analysis. The result of these files is an R package I recently released on [CRAN](https://CRAN.R-project.org/package=purging). See the `purging.R` file for the script across several functional forms as well as the `purging example.R` script for an applied example usingreal data (see examples below).
 
