@@ -1,7 +1,7 @@
 # See the README markdown for an overview of the example here. 
 
 # Read in the UN.csv data
-
+ 
 # Start with simple bivariate specification
 UN$Contracept <- as.numeric(as.character(UN$Cont)) # character to generate "NA" instead of ".."
 
