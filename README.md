@@ -1,6 +1,7 @@
 # `purging` An R package for addressing mediation effects among independent variables
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/purging)](http://cran.r-project.org/package=purging)
 [![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/purging)](http://cranlogs.r-pkg.org/)
+[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/purging)](http://www.r-pkg.org/pkg/purging)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=plastic)](https://github.com/pdwaggoner/purging/pulls)
 
 ## Why use `purging`?
