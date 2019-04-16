@@ -5,7 +5,11 @@ Version: 1.0.0
 BugReports: https://github.com/pdwaggoner/purging/issues
 Author: Philip D. Waggoner <philip.waggoner@gmail.com>
 Maintainer: Philip D. Waggoner <philip.waggoner@gmail.com>
-Description: Simple method of purging independent variables of mediating effects. First, regress the direct variable on the indirect variable. Then, used the stored residuals as the new purged (direct) variable in the updated specification. This purging process allows for use of a new direct variable uncorrelated with the indirect variable. Please cite the method and/or package using Waggoner, Philip D. (2018) <doi:10.1177/1532673X18759644>.
+Description: Simple method of purging independent variables of mediating effects. First, regress the direct 
+    variable on the indirect variable. Then, used the stored residuals as the new purged (direct) variable in 
+    the updated specification. This purging process allows for use of a new direct variable uncorrelated with 
+    the indirect variable. Please cite the method and/or package using Waggoner, Philip D. (2018) 
+    <doi:10.1177/1532673X18759644>.
 License: MIT + file LICENSE
 Imports: MASS
 Encoding: UTF-8
